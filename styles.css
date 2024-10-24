@@ -1,0 +1,44 @@
+body {
+    color: whitesmoke;
+    margin: 0;
+}
+
+
+.content {
+    background-image: url('./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Keep the background fixed while scrolling */
+    color: white;
+}
+
+/* -----Navbar----- */
+/* Target the tag ul within the container/class*/
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    background-color: gray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar ul a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    transition: .3s;
+    /*Allows smoother transition while hovering*/
+}
+
+/* Hover effect for anchor tags*/
+
+.navbar ul a:hover {
+    background: black;
+    border-radius: 3px;
+}
