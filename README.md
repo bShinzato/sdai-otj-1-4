@@ -11,3 +11,17 @@ Using this repository, you will embark on your On the Job project over the next 
 - [Week 4 Guidance](https://gist.github.com/JohnWP8253/3d682809b325a1bab9a35c29f85f517c)
 
 ** ⚠️ Remember to add and commit early and often as this is industry best practice ⚠️**
+
+## To-Do List ✅
+ 1. Generate the index.html file using the provided shortcut.
+ 2. Regularly add and commit changes to ensure your codespace remains active.
+ 3. Update the webpage title.
+ 4. Insert a page heading from the Copy Document.
+ 5. Create and populate a navbar with links to: about us, dev favorites, location, and hours.
+ 6. Establish <div> containers for: hero image, about us, dev favorites, location, and hours.
+ 7. Choose and embed images from the assets folder for the hero and logo sections.
+ 8. Insert headers for each section using the Copy Document.
+ 9. Populate sections with paragraphs from the Copy Document.
+ 10. For the hours section, use an unordered list with days and times in separate <span> tags.
+ 11. Push all changes to your codespace.
+ 12. Submit the codebase URL in Canvas.
