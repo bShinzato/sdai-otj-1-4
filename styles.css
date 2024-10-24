@@ -42,3 +42,10 @@ body {
     background: black;
     border-radius: 3px;
 }
+
+/* ----Hero Section----- */
+.heroSection h1 {
+    text-align: center;
+    text-decoration-line: overline;
+    text-shadow: 2px 2px black;
+}
