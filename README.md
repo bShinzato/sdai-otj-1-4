@@ -12,7 +12,7 @@ Using this repository, you will embark on your On the Job project over the next 
 
 ** ⚠️ Remember to add and commit early and often as this is industry best practice ⚠️**
 
-## To-Do List ✅
+## To-Do List ✅ WEEK 1
  1. ✅ Generate the `index.html` file using the provided shortcut.
  2. ✅ Regularly add and commit changes to ensure your codespace remains active.
  3. ✅ Update the webpage `title`.
@@ -25,3 +25,14 @@ Using this repository, you will embark on your On the Job project over the next 
  10. ✅ For the hours section, use an unordered list with days and times in separate `<span>` tags.
  11. ✅ Push all changes to your codespace.
  12. ✅ Submit the codebase URL in Canvas.
+---
+ ## To-Do List ✅ WEEK 2
+ 1. Refactor HTML: Use AI to refactor index.html into semantic HTML.
+ 2. Verify HTML: Ensure the semantic HTML is correct before integrating into your CodeSpace.
+ 3. Center Menu Title: Center the menu section title and set its width to 800px using CSS class selectors.
+ 4. ✅ Style Headings: Apply specified font family, size, margin, and color to ✅h1, ✅h2, ✅h3, and ✅h4 using element selectors.
+ 5. ✅ Add Image: Place an additional image in the 'About us' section below the last paragraph.
+ 6. ✅ Commit Changes: Regularly add and commit changes in CodeSpace to maintain progress.
+ 7. ✅ Style Menu Descriptions: Use a class selector for styling the text inside paragraph elements that describe each menu item.
+ 8. ✅ Adjust Line Height: Modify line height to enhance text readability.
+ 9. ✅ Adjust Spacing: Apply margin and padding to ensure proper spacing around paragraphs and headings.
