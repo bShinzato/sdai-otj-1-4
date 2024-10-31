@@ -27,8 +27,8 @@ Using this repository, you will embark on your On the Job project over the next 
  12. ✅ Submit the codebase URL in Canvas.
 ---
  ## To-Do List ✅ WEEK 2
- 1. Refactor HTML: Use AI to refactor index.html into semantic HTML.
- 2. Verify HTML: Ensure the semantic HTML is correct before integrating into your CodeSpace.
+ 1. ✅ Refactor HTML: Use AI to refactor index.html into semantic HTML.
+ 2. ✅ Verify HTML: Ensure the semantic HTML is correct before integrating into your CodeSpace.
  3. Center Menu Title: Center the menu section title and set its width to 800px using CSS class selectors.
  4. ✅ Style Headings: Apply specified font family, size, margin, and color to ✅h1, ✅h2, ✅h3, and ✅h4 using element selectors.
  5. ✅ Add Image: Place an additional image in the 'About us' section below the last paragraph.
