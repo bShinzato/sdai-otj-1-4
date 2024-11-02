@@ -2,7 +2,6 @@ body {
     color: whitesmoke;
     margin: 0;
     background-color: black;
-    opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
 }
 
@@ -79,6 +78,9 @@ body {
 
 .menu-header h2 {
     text-align: center;
+    width: 800px;
+    /* Margin 0 auto centers horizontally due to fixed width */
+    margin: 0 auto;
     text-decoration-line: underline;
     text-shadow: 2px 2px black;
 }
