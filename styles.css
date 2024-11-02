@@ -123,12 +123,14 @@ body {
 }
 
 .wraps, .sides {
+    font-size: 1.1rem;
     font-weight: bold;
     padding-bottom: 2px;
 }
 
 .wrap-discription, .sides-discription {
     font-style: italic;
+    font-size: 1.1rem;
     display: block;
     padding-bottom: 8px;
 }
