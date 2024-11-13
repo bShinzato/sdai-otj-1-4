@@ -82,6 +82,25 @@ body {
     padding-bottom: 20px;
 }
 
+/* ----- Dev Photos ----- */
+.dev-fav-images {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.first-dev-img, .second-dev-img, .third-dev-img {
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px black;
+    transition: transform 0.3s ease
+}
+
+.first-dev-img:hover, .second-dev-img:hover, .third-dev-img:hover {
+    transform: scale(1.10);
+}
+
 .menu-header h2 {
     text-align: center;
     width: 800px;
@@ -100,7 +119,7 @@ body {
     padding: 8px;
 }
 /* Style both sections */
-.wrap-section, .sides-section {
+.wrap-section, .sides-section, .about-us {
     flex: 1;
     padding: 10px;
     /*linear gradient from top to bottom,utilize rgba for grey color, last value is transparency*/
@@ -111,8 +130,8 @@ body {
 }
 
 /* Hover animation with grey background and scale size for user interaction*/
-.wrap-section:hover, .sides-section:hover {
-    transform: scale(1.05);
+.wrap-section:hover, .sides-section:hover, .about-us:hover {
+    transform: scale(1.02);
     background-color: grey;
 }
 
