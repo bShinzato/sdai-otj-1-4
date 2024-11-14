@@ -40,6 +40,6 @@ Using this repository, you will embark on your On the Job project over the next 
  ## To-Do List ✅ WEEK 3
  1. ✅ Add Images: Choose three images from the provided assets and place them in "The Developer's Favorites" section under the paragraph tag.
  2. ✅ Style the Gallery: Use class and ID selectors along with inline and block-level styling to arrange the images horizontally. Ensure responsiveness with Flexbox.
- 3. Add a Footer: Incorporate a semantic footer element with social media icons linked to respective platforms and a copyright statement. The icons images will be in the icons folder in assets.
- 4. Style Icons: Use in-line block and flex-box to put social media icons centered on the page placed horizontally.
- 5. Validate Your HTML: Use AI to regularly validate your HTML to catch and correct any errors like incomplete tags or incorrect attributes.
+ 3. ✅ Add a Footer: Incorporate a semantic footer element with social media icons linked to respective platforms and a copyright statement. The icons images will be in the icons folder in assets.
+ 4. ✅ Style Icons: Use in-line block and flex-box to put social media icons centered on the page placed horizontally.
+ 5. ✅ Validate Your HTML: Use AI to regularly validate your HTML to catch and correct any errors like incomplete tags or incorrect attributes.
