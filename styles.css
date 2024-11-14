@@ -1,8 +1,9 @@
+/* ----- Global Styles ----- */
 * {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Added for better element sizing */
 }
 
 body {
@@ -10,9 +11,9 @@ body {
   margin: 0;
   background-color: black;
   animation: fadeIn 0.5s ease-in forwards;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Utilize keyframes for animation; call on FadeIn */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -28,22 +29,20 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* Keep the background fixed while scrolling */
   color: white;
+  padding: 20px;
 }
 
 /* ----- Navbar ----- */
-/* Target the tag ul within the container/class*/
 .navbar ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
   margin: 0;
-  width: 100%;
+  padding: 15px;
   background-color: gray;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  border-radius: 10px;
 }
 
 .navbar ul a {
@@ -51,10 +50,7 @@ body {
   text-decoration: none;
   padding: 10px;
   transition: 0.3s;
-  /*Allows smoother transition while hovering*/
 }
-
-/* Hover effect for anchor tags*/
 
 .navbar ul a:hover {
   background: black;
@@ -65,177 +61,184 @@ body {
 .hero-section h1 {
   text-align: center;
   text-shadow: 5px 5px black;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
   padding-top: 10px;
   font-weight: 600;
-  font-style: normal;
 }
 
-/* ----- Middle Section ----- */
+/* ----- Developer Favorites Section ----- */
 .dev-favorites h2 {
   text-align: center;
-  text-decoration-line: underline;
+  text-decoration: underline;
   text-shadow: 2px 2px black;
   font-weight: 500;
-  font-style: normal;
-  font-size: 2rem;
-  margin: 10px;
-  padding: 2px;
+  font-size: 1.8rem;
+  margin: 20px 0;
 }
 
 .dev-favorites p {
   text-align: center;
   font-style: italic;
-  font-size: 1.1rem;
-  margin: auto;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
   padding-bottom: 20px;
 }
 
-/* ----- Dev Photos ----- */
 .dev-fav-images {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center;
+  gap: 20px;
   padding-bottom: 20px;
 }
 
-.first-dev-img,
-.second-dev-img,
-.third-dev-img {
-  width: 350px;
-  height: 400px;
+.dev-fav-images img {
+  width: 100%;
+  max-width: 300px;
+  height: auto; /* Maintain aspect ratio */
   border-radius: 10px;
   box-shadow: 0 8px 8px black;
   transition: transform 0.3s ease;
 }
 
-.first-dev-img:hover,
-.second-dev-img:hover,
-.third-dev-img:hover {
+.dev-fav-images img:hover {
   transform: scale(1.1);
 }
 
+/* ----- Menu Section ----- */
 .menu-header h2 {
   text-align: center;
-  width: 800px;
-  /* Margin 0 auto centers horizontally due to fixed width */
-  margin: 0 auto;
-  padding-bottom: 2px;
-  text-decoration-line: underline;
+  text-decoration: underline;
   text-shadow: 2px 2px black;
   font-weight: 500;
-  font-style: normal;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin: 20px 0;
 }
 
 .menu-sections {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center;
   gap: 20px;
-  margin-top: 20px;
-  padding: 8px;
+  padding: 20px;
 }
-/* Style both sections */
-.wrap-section,
-.sides-section,
-.about-us {
+
+.wrap-section, .sides-section, .about-us {
   flex: 1;
+  min-width: 400px; /* Limit the width */
+  max-width: 500px; /* Limit the width */
   padding: 10px;
-  /*linear gradient from top to bottom,utilize rgba for grey color, last value is transparency*/
-  background: linear-gradient(
-    to bottom,
-    rgba(128, 128, 128, 0.3),
-    rgba(0, 0, 0, 0.7)
-  );
+  background: linear-gradient(to bottom, rgba(128, 128, 128, 0.3), rgba(0, 0, 0, 0.7));
   border-radius: 10px;
   box-shadow: 0 8px 8px black;
   transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover animation with grey background and scale size for user interaction*/
-.wrap-section:hover,
-.sides-section:hover,
-.about-us:hover {
+.wrap-section:hover, .sides-section:hover, .about-us:hover {
   transform: scale(1.02);
   background-color: grey;
 }
 
-/* Styling the headers for each section */
-.wrap-section h3,
-.sides-section h3 {
+.wrap-section h3, .sides-section h3 {
   text-align: center;
   font-weight: 500;
-  font-style: normal;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  padding: 1px;
   text-shadow: 2px 2px black;
 }
 
-/* Styling the list items for each section */
-.wrap-section ul,
-.sides-section ul {
+.wrap-section ul, .sides-section ul {
   list-style-type: none;
+  padding: 0;
 }
 
-.wraps,
-.sides {
-  font-size: 1.1rem;
+.wraps, .sides {
+  font-size: 1rem;
   font-weight: bold;
   padding-bottom: 2px;
 }
 
-.wrap-discription,
-.sides-discription {
+.wrap-discription, .sides-discription {
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   display: block;
   padding-bottom: 8px;
 }
 
-/* ----- Second Middle Section ----- */
+/* ----- About Us Section ----- */
 .second-middle-section {
   display: flex;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .second-middle-section-photo {
-  height: 350px;
-  width: 600px;
-  border-radius: 10px 10px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
   box-shadow: 0 8px 8px black;
 }
 
-.about-us h2 {
+.about-us {
+  max-width: 600px;
   text-align: center;
+}
+
+.about-us h2 {
   font-weight: 500;
-  font-style: normal;
-  margin: 0 auto;
-  padding-bottom: 2px;
   text-shadow: 2px 2px black;
+  margin-bottom: 10px;
 }
 
 .about-us p {
   font-style: italic;
-  margin-bottom: 10px;
-  padding-top: 2px;
-  font-size: 1.1rem;
-  text-align: center;
+  font-size: 1rem;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
 /* ----- Hours and Location ----- */
+.bottom-section {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping */
+  justify-content: center;
+  text-align: center;
+}
 
+.location-section h2, .hours h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px black;
+}
 
+.hours ul {
+  list-style-type: none;
+}
+
+.location-btn {
+  border-radius: 10px;
+  background-color: grey;
+  color: whitesmoke;
+  transition: transform 0.3s ease;
+}
+
+.location-btn:hover {
+  transform: scale(1.05);
+}
 
 /* ----- Footer ----- */
 .footer {
-  display: flex;
-  justify-content: center;
   background-color: gray;
   color: whitesmoke;
-  padding: 5px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .social-icons {
@@ -246,18 +249,52 @@ body {
 
 .icon-row {
   display: flex;
-  gap: 5px;
-  margin-top: 2px;
+  gap: 20px;
+  margin-top: 5px;
 }
 
 .icon-link {
   color: whitesmoke;
-  margin: 0 10px;
   font-size: 1.5rem;
   transition: color 0.3s;
-  text-decoration: none;
 }
 
 .icon-link:hover {
   color: #1da1f2;
+}
+
+/* ----- Responsive Design ----- */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: center;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem; /* Reduce font size */
+  }
+
+  .menu-sections {
+    flex-direction: column; /* Stack menu sections vertically */
+    align-items: center;
+  }
+
+  .second-middle-section {
+    flex-direction: column; /* Stack about us and image vertically */
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.8rem; /* Further reduce font size */
+  }
+
+  .menu-header h2 {
+    font-size: 1.5rem; /* Reduce font size */
+  }
+
+  .icon-row {
+    gap: 5px; /* Reduce space between icons */
+  }
 }
